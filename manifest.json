@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Birthday Reminder",
+  "version": "1.0",
+  "description": "A simple birthday reminder extension.",
+
+  "permissions": ["storage"],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/image16.png",
+      "48": "images/image48.png",
+      "128": "images/image128.png"
+    }
+  },
+  "icons": {
+    "16": "images/image16.png",
+    "48": "images/image48.png",
+    "128": "images/image128.png"
+  }
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Birthday Reminder</title>
+    <style>
+        body {
+            font-size: 1.0em;
+            font-family: 'Arial', sans-serif;
+            padding: 10px;
+        }
+        
+        #upcoming-birthday {
+            font-size: 1.2em;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        #countdown {
+            font-size: 1.5em;
+            color: red;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button.delete-button {
+            background-color: #ff6666;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button.delete-button:hover {
+            background-color: #ff4d4d;
+        }
+    </style>
+</head>
+
+<body style="width: 300px">
+    <div>
+        <h3>Next Birthday: </h3>
+        <div id="upcoming-birthday">
+            <span id="upcoming-name">None</span>
+            <div id="countdown">0 days 0 hours</div>
+        </div>
+    </div>
+
+    <form id="birthday-form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" required>
+        </div>
+        
+        <button type="submit">Add</button>
+    </form>
+
+    <div id="all-birthdays">
+        <h3>Your Birthday Database: </h3>
+        <table id="birthdays-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Birthday</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table Rows will be added here by popup.js -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# A Simple Icon-Based Birthday Reminder
+# A Simple Icon-Based Birthday Reminder Google Chrome Extension
 To use, download the folder here and click "Load Unpacked" at chrome://extensions/, or install from Chrome Web Store.
 
 Current Features:

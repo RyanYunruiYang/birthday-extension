@@ -1,7 +1,7 @@
 # A Simple Icon-Based Birthday Reminder Google Chrome Extension
 To use this extension: 
 1. Download the folder here
-2. Go to chrome://extensions/, turn on Developer mode, and click "Load Unpacked" and select the (unzipped) folder
+2. Go to chrome://extensions/, turn on Developer mode, and click "Load Unpacked" and select the (unzipped) folder containing this repo.
 
 Current Features:
 - Changing extension icon ("0 days" to "9 days")

@@ -19,9 +19,10 @@ function scheduleIconUpdate() {
     console.log("function call: scheduleIconUpdate")
 
     let now = new Date();
-    let nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+    let nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1, 0, 0, 0);
     let timeUntilMidnight = nextMidnight.getTime() - now.getTime();
 
+    console.log(timeUntilMidnight +  "(milliseconds)");
     setTimeout(function() {
         updateIconAtMidnight();
         setInterval(updateIconAtMidnight, 1000 * 60 * 60 * 24);

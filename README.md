@@ -4,9 +4,9 @@ To use this extension:
 2. Go to chrome://extensions/, turn on Developer mode, and click "Load Unpacked" and select the folder containing this repo.
 
 Current Features:
-- Changing extension icon ("0 days" to "9 days")
 - Sorted table of birthdays
 - Special message on birthdays
+- Visual countdown in the extension icon
 
 Future Features:
 - Persistent/Background Updating of Icon
